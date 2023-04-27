@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lane Brantley, ITIS 3135-091, First Javascripts</title>
+    <script src="scripts/firstscripts.js"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>First Scripts</h2>
+        
+        <h3>Today is <span id="datetime"></span></h3>
+        <p>What is your name? <input type="text" id="name"></p>
+        <p>How are you feeling? <input type="text" id="mood"></p>
+        <button onclick="message();">Try it</button>
+        <p id="message"></p>
+
+        <p>Enter a number: <input type="number" id="firstnumber"></p>
+        <p>Enter another number: <input type="number" id="secondnumber"></p>
+        <button onclick="calculateTotal();">Add them!</button>
+        <p id="total"></p>
+
+        <p>Enter a total: <input type="number" id="taxNumber"></p>
+        <button onclick="calculateTax();">Calculate Tax!</button>
+        <p id="taxation"></p>
+
+        <p>Enter a price: <input type="number" id="price"></p>
+        <button onclick="calculateShipping();">Calculate Tax!</button>
+        <p id="shipping"></p>
+
+        <p>Enter a catchy phrase: <input type="text" id="phrase"></p>
+        <button onclick="mascotMessage();">Make a Catch Phrase!</button>
+        <p id="catchPhrase"></p>
+
+        <p>What is your last name? <input type="text" id="surname"></p>
+        <button onclick="surnameResponse();">Create your surname!</button>
+        <p id="surnameMessage"></p>
+    </main>
+
+    <div id="footer"></div>
+    <script src="scripts/default.js"></script>
+</body>
+</html>

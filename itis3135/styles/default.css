@@ -1,0 +1,167 @@
+body {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+footer {
+    margin-top: 50%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a:link {
+    color: green;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: rgb(225, 99, 99);
+}
+a:active {
+    color: rgb(225, 99, 99);
+}
+
+.sec {
+    text-align: left;
+    margin-top: 100px;
+}
+.darkbutton {
+    background-color: brown;
+    color: beige;
+}
+.darkinput {
+    background-color:cadetblue;
+}
+.inputtext {
+    color:blueviolet;
+}
+.inputfont {
+    font: x-small;
+}
+.inputsize {
+    font-size: large;
+}
+.toprow {
+    background-color: salmon;
+}
+.lightrow {
+    background-color: aquamarine;
+}
+.darkrow {
+    background-color: blue;
+}
+.listthings {
+    font-size: larger;
+}
+.para {
+    border-style: solid;
+}
+.introimg {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+.left {
+    text-align: left;
+    margin-left: 50px;
+}
+.center {
+    text-align: center;
+}
+.introfig {
+    font: italic;
+    text-align: center;
+}
+.introlist {
+    padding-top: 10px;
+}
+.introcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Below is classes for calculator_try website */
+.calculatorContainer {
+    margin: 0 auto;
+    max-width: 225px;
+    max-height: 330px;
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+
+.calcButtons{
+    margin: 2px 2px 2px 2px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 2px 2px 2px 2px;
+}
+
+.display {
+    height: 2em;
+    border: 2px solid grey;
+    font-size: 1.5em;
+}
+
+/* Below is classes for calculator_fcc website */
+.calculatorKeys {
+    display: grid;
+}
+
+/* Below is classes for slideshow website */
+
+.slides-container {
+    width: 540px;
+    margin: 40px auto;
+    overflow: auto;
+}
+
+.slider-inner {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: #666 solid 1px;
+}
+
+.slider-inner img {
+    display: none;
+    width: 500px;
+    height: auto;
+}
+
+.slider-inner img.active {
+    display:inline-block;
+}
+
+.prev,.next{
+    float:left;
+    margin-top: 130px;
+    cursor:pointer;
+    width: 40px;
+    height: auto;
+}
+
+.prev{
+    position:relative;
+    margin-right: -45px;
+    z-index: 100;
+}
+.next{
+    position:relative;
+    margin-left: -45px;
+    z-index: 100;
+}

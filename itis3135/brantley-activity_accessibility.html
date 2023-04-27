@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="styles/brantley-activity_accessibility.css">
+  <title>Lane Brantley, ITIS3135, Accessibility</title>
+
+</head>
+
+<body>
+  <div id="header"></div>
+  <main>  
+    <h2>Accessibility</h2>
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th scope="col">TYPE</th>
+          <th scope="col">PRODUCT</th>
+          <th scope="col">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg" alt="Birthday Candles!"></td>
+          <td><ul>
+            <li>1. Comes in a range of fun, vibrant colors</li>
+            <li>2. Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+            <li>3. Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+          </ul> 
+        </td>
+        </tr>
+        <tr>
+            <th>Voltives</th>
+            <td><img src="images/voltives.jpeg" alt="Voltive Candles!"></td>
+            <td><ul>
+              <li>1. Inexpensive and easy to use</li>
+              <li>2. Bigger than tea lights to provide longer burn times, making them better for long events</li>
+            </ul></td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td><img src="images/taper-candles.jpg" alt="Taper Candles!"></td>
+              <td><ul>
+                <li>1. Commonly known as window candles</li>
+                <li>2. Long, slender constructions add dimensions to table tops</li>
+              </ul></td>
+            </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+    <form action="#">
+      <h2>Enter your name and phone number to win a gift!</h2>
+      <label for="name">Enter your name: </label>
+      <input id="name" type="text" aria-required="true" autocomplete="name">
+      <label for="phone-number">Enter your phone number (no dashes): </label>
+      <input type="tel" id="phone-number" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <button type="submit" class="submitbutton">Submit</button>
+    
+    </form>
+  
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <div id="footer"></div>
+  <script src="scripts/default.js"></script>
+</body>
+</html>

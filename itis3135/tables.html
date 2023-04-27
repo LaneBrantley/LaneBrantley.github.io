@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Lane Brantley, ITIS3135, Tables</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Tables</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Nathan Shanes nshanes@uncc.edu 4</li>
+            <li>Lane Brantley lbrantl@uncc.edu 27</li>
+            <li>Duncan Bryson dbryson@uncc.edu 1</li>
+            <li>Conner Crisco ccrisco@gmail.com 30</li>
+            <li>Andrew Cipolla acipolla@yahoo.com 42</li>
+            <li>Cody Benoy cbenoy@gmail.com 20</li>
+            <li>Ethan Lowder elowder@gmail.com 21</li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>email</th>
+                <th>YOS</th>
+            </tr>
+            <tr>
+                <td>Nathan Shanes</td>
+                <td>nshanes@uncc.edu</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Lane Brantley</td>
+                <td>lbrantl@uncc.edu</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Duncan Bryson</td>
+                <td>dbryson@uncc.edu</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Conner Crisco</td>
+                <td>ccrisco@gmail.com</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Andrew Cipolla</td>
+                <td>acipolla@yahoo.com</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>Cody Benoy</td>
+                <td>cbenoy@gmail.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Ethan Lowder</td>
+                <td>elowder@gmail.com</td>
+                <td>21</td>
+            </tr>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr class="toprow">
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>email</th>
+                    <th>YOS</th>
+                    <th>Salary</th>
+                </tr>
+                <tr class="lightrow">
+                    <td rowspan="2">Sales</td>
+                    <td>Nathan Shanes</td>
+                    <td>nshanes@uncc.edu</td>
+                    <td>4</td>
+                    <td>3,200</td>
+                </tr>
+                <tr class="lightrow">
+                    <td>Conner Crisco</td>
+                    <td>ccrisco@gmail.com</td>
+                    <td>30</td>
+                    <td>4,600</td>
+                </tr>
+                <tr class="darkrow">
+                    <td rowspan="2">Marketing</td>
+                    <td>Lane Brantley</td>
+                    <td>lbrantl@uncc.edu</td>
+                    <td>27</td>
+                    <td>3,300</td>
+                </tr>
+                <tr class="darkrow">
+                    <td>Duncan Bryson</td>
+                    <td>dbryson@uncc.edu</td>
+                    <td>1</td>
+                    <td>2,000</td>
+                </tr>
+                <tr class="lightrow">
+                    <td>Assembly</td>
+                    <td>Andrew Cipolla</td>
+                    <td>acipolla@yahoo.com</td>
+                    <td>42</td>
+                    <td>2,300</td>
+                </tr>
+                <tr class="darkrow">
+                    <td>Boss</td>
+                    <td>Cody Benoy</td>
+                    <td>cbenoy@gmail.com</td>
+                    <td>20</td>
+                    <td>10,000</td>
+                </tr>
+                <tr class="lightrow">
+                    <td>Fisherman</td>
+                    <td>Ethan Lowder</td>
+                    <td>elowder@gmail.com</td>
+                    <td>21</td>
+                    <td>1,000</td>
+                </tr>
+                <tr class="darkrow">
+                    <th colspan="3">Total Years of Service</th>
+                    <td>145</td>
+                    <td>26,400</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+    <div id="footer"></div>
+    <script src="scripts/default.js"></script>
+</body>
+</html>

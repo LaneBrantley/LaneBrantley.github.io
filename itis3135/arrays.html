@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lane Brantley, ITIS3135, Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>     
+        <h2>Arrays</h2>
+        <label>Choose an employee:</label>
+        <select name="employee" id="employees" onclick="updateList();">
+            
+        </select>
+
+        <button onclick="addSalary();">Add your information:</button>
+
+        <button onclick="displayResults();">Display results</button>
+        <p id="highestSal"></p>
+        <p id="avgSal"></p>
+        <button onclick="displaySalary();">Display your salary</button>
+        <table id="salTable"></table>
+
+        <script src="scripts/arrays.js"></script>
+    </main>
+    <div id="footer"></div>
+    <script src="scripts/default.js"></script>
+</body>
+</html>

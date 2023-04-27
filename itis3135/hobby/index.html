@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lane Brantley, ITIS3135, Forms</title>
+    <style>
+        section > figure > img {
+            width: 400px;
+            height: auto;
+        }
+        section {
+            border: solid red;
+            display: none;
+        }
+        section > h2, section > p, section > figure {
+            margin-left: 2rem;
+        }
+        section.active {
+            display: inline-block;
+        }
+        footer {
+            padding-top: 30px;
+            justify-content: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display='block';
+            document.getElementById(hidden).style.display='none';
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>My Hobby!</h1>
+        <section id="who" class="">
+            <h2>Who</h2>
+            <p>My name is Lane Brantley, I'm 20 years old and studying Computer Science at UNCC.</p>
+            <figure>
+                <img src="images/me.jpg" alt="">
+                <figcaption>This is a picture of me from about a year ago.</figcaption>
+            </figure>
+            <a href="#" onclick="return show('what','who');">What</a>
+            <a href="#" onclick="return show('when','who');">When</a>
+            <a href="#" onclick="return show('where','who');">Where</a>
+            <a href="#" onclick="return show('how','who');">How</a>
+            <a href="#" onclick="return show('why','who');">Why</a>
+        </section>
+        <section id="what" class="active">
+            <h2>What</h2>
+            <p>Personally I've found a lot of joy in lifting weights throughout my youth. I've been lifting for nearly 4 years now.</p>
+            <figure>
+                <img src="images/lifting.jpg" alt="">
+                <figcaption>I have been able to build up a decent physique due to lifting.</figcaption>
+            </figure>
+            <a href="#" onclick="return show('who','what');">Who</a>
+            <a href="#" onclick="return show('when','what');">When</a>
+            <a href="#" onclick="return show('where','what');">Where</a>
+            <a href="#" onclick="return show('how','what');">How</a>
+            <a href="#" onclick="return show('why','what');">Why</a>
+        </section>
+        <section id="when" class="">
+            <h2>When</h2>
+            <p>I started lifting sometime in 2020 near the end of junior year of highschool.</p>
+            <figure>
+                <img src="images/2020.jpg" alt="">\
+                <figcaption>2020 was a year of change for everyone, but I tried to make the most of it.</figcaption>
+            </figure>
+            <a href="#" onclick="return show('who','when');">Who</a>
+            <a href="#" onclick="return show('what','when');">What</a>
+            <a href="#" onclick="return show('where','when');">Where</a>
+            <a href="#" onclick="return show('how','when');">How</a>
+            <a href="#" onclick="return show('why','when');">Why</a>
+        </section>
+        <section id="where" class="">
+            <h2>Where</h2>
+            <p>I started exercising at a park in my hometown, carrying dumbells and walking with them, intermediately doing push-ups, sit-ups and squats.</p>
+            <figure>
+                <img src="images/park.jpg" alt="">
+                <figcaption>This trail was 2 miles round trip, and I carried 60 pounds accross it stopping to do the exercises at each 1/10 marker.</figcaption>
+            </figure>
+            <a href="#" onclick="return show('who','where');">Who</a>
+            <a href="#" onclick="return show('what','where');">What</a>
+            <a href="#" onclick="return show('when','where');">When</a>
+            <a href="#" onclick="return show('how','where');">How</a>
+            <a href="#" onclick="return show('why','where');">Why</a>
+        </section>
+        <section id="how" class="">
+            <h2>How</h2>
+            <p>I started out using bodyweight exercises, and eventually moving on to conventional weightlifting in a commercial gym using things like the benchpress, squat rack, etc.</p>
+            <figure>
+                <img src="images/gym.jpg" alt="">
+                <figcaption>I started in a Gold's Gym and began to take weightlifting seriously.</figcaption>
+            </figure>
+            <a href="#" onclick="return show('who','how');">Who</a>
+            <a href="#" onclick="return show('what','how');">What</a>
+            <a href="#" onclick="return show('when','how');">When</a>
+            <a href="#" onclick="return show('where','how');">Where</a>
+            <a href="#" onclick="return show('why','how');">Why</a>
+        </section>
+        <section id="why" class="">
+            <h2>Why</h2>
+            <p>As a kid, I was always scrawny, being 6 feet tall and only 140 pounds, and once I took an interest to women I decided the best way to start was to improve my physique.</p>
+            <figure>
+                <img src="images/young.jpg" alt="">
+                <figcaption>This was my physique at 16 years old (I know it's hard to look at).</figcaption>
+            </figure>
+            <a href="#" onclick="return show('who','why');">Who</a>
+            <a href="#" onclick="return show('what','why');">What</a>
+            <a href="#" onclick="return show('when','why');">When</a>
+            <a href="#" onclick="return show('where','why');">Where</a>
+            <a href="#" onclick="return show('how','why');">How</a>
+        </section>
+    </main>
+    <footer>
+        <p>This webpage has been designed by <a href="itis3135/brantleysoftware.com/">brantleysoftware</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+        </a>
+    </footer>
+</body>
+</html>

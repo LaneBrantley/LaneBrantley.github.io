@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Lane Brantley, ITIS3135, Forms</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>Forms</h2>
+        
+        <section class="sec">
+            <h2>Form</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>What is your name (only letters)?</legend>
+                    <label><input class="darkinput" type="text" name="name" placeholder="name" pattern="[A-Za-z]" required></label>
+                    <input type="reset">
+                </fieldset>
+                <fieldset>
+                    <legend>What is your phone number (only numbers, no dashes)?</legend>
+                    <label><input class="inputsize" type="tel" name="name" placeholder="phone number" pattern="[0-9]+" required></label>
+                    <input type="reset">
+                </fieldset>
+                <fieldset>
+                    <legend>What is your email address?</legend>
+                    <label><input class="inputtext" type="text" name="email address" placeholder="email address" required></label>
+                    <input type="reset">
+                </fieldset>
+                <fieldset>
+                    <legend>What is your age?</legend>
+                    <label><input class="inputfont" type="radio" name="age" value="18-27" checked>18-27</label>
+                    <label><input class="inputfont" type="radio" name="age" value="28-35">28-35</label>
+                    <label><input class="inputfont" type="radio" name="age" value="36-45">36-45</label>
+                    <label><input class="inputfont" type="radio" name="age" value="46+">46+</label>
+                    <input type="reset">
+                </fieldset>
+                <fieldset>
+                    <legend>What are your credentials?</legend>
+                    <input type="checkbox" name="credentials" value="highschool diploma"> <label>Highschool diploma</label>
+                    <input type="checkbox" name="credentials" value="college degree"> <label>College Degree</label>
+                    <input type="checkbox" name="credentials" value="work experience"> <label>Work Experience</label>
+                    <input type="reset">
+                </fieldset>
+                <fieldset>
+                    <label>Choose your coding level:</label>
+                    <select name="level" id="level">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">intermediate</option>
+                        <option value="advanced">advanced</option>
+                        <option value="expert">expert</option>
+                    </select>
+                </fieldset>
+                <button class="darkbutton" type="submit" >Submit</button>
+            </form>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="scripts/default.js"></script>
+</body>
+</html>
